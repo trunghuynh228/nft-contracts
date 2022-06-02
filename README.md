@@ -41,8 +41,9 @@ Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_
 npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 ```
 # contract testnet
-Trendivision deployed to: 0xD21cAc6c834bb9409b8f9DDA4621A614d39a81C2 -verfied
-Trend deployed to: 0x05B66654052C8e4Cf8F4a9952EbC52904CDA9AE9 -verified
-TokenSale deployed to: 0x129dd7c4882DF4E099ae852a6665b98534f651f6 -verified
-Reserve deployed to: 0xDBf1EAf0C705b15ca419527f63e5674d1714AB07
-Marketplace deployed to: 0xda36A8C382640648Ec485e96B2F16394c82a17e6
+Trendivision deployed to: 0x64Be118411b8F632336DD8D1e7Ae745Ef9eA29d3
+Trend deployed to: 0x096cf33A857c6B1FBd2C46167CAC42957784F4f0
+TokenSale deployed to: 0x269ac7e5043Bc7f88C5A58c88dA3ecb4ec6F5c6D
+Reserve deployed to: 0x9b12969335d055133557ddf587ed7D9d21b25aAB
+Marketplace deployed to: 0x4cd3E99fE318B11657d0DD5C2E7BB463C798C3C5
+Trend is payment token? true or false true

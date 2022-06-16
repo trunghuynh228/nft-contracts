@@ -31,4 +31,110 @@ describe("Reserve", function () {
         await trend.transfer(reserve.address, reserveBalane)
         await trend.connect(staker).approve(staking.address,defaultStakeAmount.mul(4))
     })
-    describe("common", function () {})
+    describe("setReserve", function () {
+        it ("should revert if reserveAddress is address 0", async function () {
+
+        });
+
+        it ("should revert if sender isn't contract owner", async function () {
+
+        });
+
+        it ("should update correctly", async function () {
+
+        });
+
+    });
+
+    describe("addStakePackage", function () {
+        it ("should revert if minStaking_ = 0", async function () {
+
+        });
+
+        it ("should revert if rate_ = 0", async function () {
+
+        });
+
+        it ("should revert if lockTime_ = 0", async function () {
+
+        });
+
+        it ("should revert if sender is not owner", async function () {
+
+        });
+
+        it ("should add package correctly", async function () {
+
+        });
+    })
+    describe("removeStakePackage", function () {
+        it ("should revert if minStaking = 0", async function () {
+    
+        });
+    
+        it ("should rever if stake package was offline", async function () {
+    
+        });
+    
+        it ("should remove correctly", async function () {
+    
+        });
+
+    });
+
+    describe("Stake", function () {
+        beforeEach(async () => {
+            await staking.addStakePackage(defautRate,defaultDecimal, defaultMinStaking, oneYear)
+        })
+        it ("should revert if amount < min staking", async function () {
+    
+        });
+    
+        it ("should rever if invalid package", async function () {
+    
+        });
+    
+        it ("should  remove if package is offline", async function () {
+    
+        });
+
+        it ("should add stake correctly to a new stake info", async function () {
+    
+        });
+
+        it ("should add stake correctly to a existing stake info", async function () {
+    
+        });
+
+    });
+    describe("unStake", function () {
+        beforeEach(async () => {
+            await staking.addStakePackage(defautRate,defaultDecimal, defaultMinStaking, oneYear)
+            await staking.connect(staker).stake(defaultStakeAmount, 1)
+        })
+        it ("should revert if package not exist", async function () {
+    
+        });
+    
+        it ("should rever if not reach lock time", async function () {
+    
+        });
+
+            
+        it ("should rever if not reach lock time 2", async function () {
+    
+        });
+    
+        it ("should  unstake correctly", async function () {
+    
+        });
+
+        it ("should  unstake correctly", async function () {
+    
+        });
+
+
+
+    });
+
+})
